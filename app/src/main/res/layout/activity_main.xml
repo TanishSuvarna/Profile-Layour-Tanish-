@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:weightSum="10"
-    android:background="#2A2A40"
+    android:background="@drawable/gradient1"
     android:orientation="vertical">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -25,12 +25,16 @@
             />
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.cardview.widget.CardView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#BABACA"
         android:layout_marginRight="16dp"
-        app:cardElevation="100dp"
+        app:cardElevation="40dp"
+
+        android:layout_marginBottom="30dp"
 
         app:cardCornerRadius="40dp">
         <LinearLayout
@@ -38,7 +42,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
-
+            android:paddingBottom="10dp"
             >
 
             <ImageView
@@ -50,6 +54,7 @@
                 app:srcCompat="@drawable/gmail" />
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -58,6 +63,7 @@
                 android:fontFamily="@font/electrolize"
                 android:text="Tanish Suvarna"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <TextView
@@ -67,7 +73,9 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/electrolize"
                 android:text="stanish.mi@gmail.com"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -98,10 +106,10 @@
                     android:layout_height = "100dp">
                     <ImageView
 
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:scaleType="centerCrop"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
 
                         android:src="@drawable/html"
                         android:layout_marginLeft="25dp"/>
@@ -127,12 +135,12 @@
                     android:layout_height = "100dp">
                     <ImageView
 
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:scaleType="centerCrop"
-                        android:layout_marginTop="30dp"
-                        android:src="@drawable/html"
-                        android:layout_marginLeft="25dp"/>
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/css"
+                        android:layout_marginLeft="17dp"/>
         </androidx.cardview.widget.CardView>
             </LinearLayout>
 
@@ -155,12 +163,12 @@
                 >
                     <ImageView
 
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:scaleType="centerCrop"
-                        android:layout_marginTop="30dp"
-                        android:src="@drawable/html"
-                        android:layout_marginLeft="25dp"/>
+                        android:layout_marginTop="17dp"
+                        android:src="@drawable/javascript"
+                        android:layout_marginLeft="17dp"/>
         </androidx.cardview.widget.CardView>
             </LinearLayout>
             <LinearLayout
@@ -178,16 +186,44 @@
                     android:layout_height = "100dp">
                     <ImageView
 
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:scaleType="centerCrop"
-                        android:layout_marginTop="30dp"
-                        android:src="@drawable/html"
-                        android:layout_marginLeft="25dp"/>
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/php"
+                        android:layout_marginLeft="15dp"/>
         </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <androidx.cardview.widget.CardView
+            app:cardElevation = "16dp"
+            app:cardBackgroundColor="#A4978E"
+
+            app:cardCornerRadius = "160dp"
+            android:layout_margin = "16dp"
+
+
+            android:layout_width = "100dp"
+            android:layout_height = "100dp"
+            >
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/web"
+
+
+                android:layout_marginLeft="15dp"/>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
     </GridLayout>
 
     <TextView
@@ -195,7 +231,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/electrolize"
-        android:text="Total Completed = 4/4"
+        android:text="Total Completed = 5/5"
         android:textColor="@color/white"
         android:textSize="20dp" />
 
